@@ -1,0 +1,3 @@
+[submodule "plugins/JunkVolvo"]
+	path = plugins/JunkVolvo
+	url = git@github.com:JunkVolvo/kanboard-plugin-junkvolvo
