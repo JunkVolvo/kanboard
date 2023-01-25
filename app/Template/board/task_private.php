@@ -40,7 +40,7 @@
                 <?php if ($this->user->hasProjectAccess('TaskModificationController', 'edit', $task['project_id'])): ?>
                     <?= $this->render('task/dropdown', array('task' => $task, 'redirect' => 'board')) ?>
                     <?php if ($this->projectRole->canUpdateTask($task)): ?>
-                        <?= $this->modal->large('edit', '', 'TaskModificationController', 'edit', array('task_id' => $task['id'])) ?>
+                        <?= $this->modal->large('edit fa-2x', '', 'TaskModificationController', 'edit', array('task_id' => $task['id'])) ?>
                     <?php endif ?>
                 <?php else: ?>
                     <strong><?= '#'.$task['id'] ?></strong>
