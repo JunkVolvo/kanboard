@@ -9,4 +9,6 @@ try {
     $runner->execute();
 } catch (Exception $e) {
     echo 'Internal Error: '.$e->getMessage();
+    if (DEBUG)
+        echo "\nTrace:\n" . $e->getTraceAsString();
 }
